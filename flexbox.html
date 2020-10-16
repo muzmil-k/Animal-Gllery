@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Courier New, Courier, monospace;
+        }
+
+        .header {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            position: relative;
+        }
+
+        .column {
+            flex: 25%;
+        }
+
+        .column img {
+            width: 100%;
+            padding: 5px;
+            vertical-align: middle;
+        }
+
+
+
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Responsive Animals Image Gallery</h1>
+        <p>Resize the browser window to see the responsive effect</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="./images/image-8.jpg" alt="">
+            <img src="./images/image-2.jpg" alt="">
+            <img src="./images/image-3.jpg" alt="">
+            <img src="./images/image-4.jpg" alt="">
+            <img src="./images/image-5.jpg" alt="">
+            <img src="./images/image-6.jpg" alt="">
+            <img src="./images/image-7.jpg" alt="">
+        </div>
+        <div class="column">
+            <img src="./images/image-20.jpg" alt="">
+            <img src="./images/image-9.jpg" alt="">
+            <img src="./images/image-10.jpg" alt="">
+            <img src="./images/image-11.jpg" alt="">
+            <img src="./images/image-12.jpg" alt="">
+            <img src="./images/image-13.jpg" alt="">
+            <img src="./images/image-14.jpg" alt="">
+        </div>
+        <div class="column">
+            <img src="./images/image-15.jpg" alt="">
+            <img src="./images/image-16.jpg" alt="">
+            <img src="./images/image-17.jpg" alt="">
+            <img src="./images/image-18.jpg" alt="">
+            <img src="./images/image-19.jpg" alt="">
+            <img src="./images/image-1.jpg" alt="">
+
+        </div>
+        <div class="column">
+            <img src="./images/image-1.jpg" alt="">
+            <img src="./images/image-21.jpg" alt="">
+            <img src="./images/image-22.jpg" alt="">
+            <img src="./images/image-23.jpg" alt="">
+            <img src="./images/image-24.jpg" alt="">
+            <img src="./images/image-25.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
